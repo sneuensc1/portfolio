@@ -81,14 +81,14 @@ footer {
     font-size: 18px;
 }
 
+#projects :first-child .work-photo img {
+    flex: 1;
+    max-width: 35%;
+}
+
 .work-photo img {
     flex: 1;
     max-width: 15%;
-}
-
-.work-photo img :first {
-    flex: 1;
-    max-width: 25%;
 }
 
 li {
