@@ -15,11 +15,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    z-index: 9999;
-    padding: 20px 30px
+    margin: 20px 30px
     width: 100%;
 }
 
@@ -46,6 +43,13 @@ header nav ul {
 header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+footer {
+    background-color: slateblue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 li {
@@ -84,8 +88,12 @@ li {
 #projects {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+#projects li {
+    width: 35%;
 }
 
 #projects :first-child .work-photo img {
@@ -100,4 +108,27 @@ li {
     margin: 20px;
 }
 
+#contact-me ul li {
+    justify-content: center;
+    align-items: center;
+}
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      justify-content: center;
+    }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    #projects li {
+        width: 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .about-me{
+        display: flex;
+    }
+  }
