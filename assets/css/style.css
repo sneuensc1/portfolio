@@ -10,12 +10,6 @@ body {
     color: #232045;
 }
 
-li {
-    display: inline-block;
-    padding: 3px;
-    border-radius: 3px;
-  }
-
 header {
     background-color: slateblue;
     display: flex;
@@ -54,6 +48,11 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+li {
+    list-style: none;
+    display: inline-block;
+}
+
 .section-title {
     font-size: 36px;
     border-bottom: 3px solid #232045;
@@ -64,22 +63,30 @@ header nav ul li a {
 }
 
 .about-me {
-
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-me img {
-    flex: 1;
     max-width: 35%;
-    padding: 20px;
     border-radius: 10px;
+    margin: 20px;
 }
 
 .about-me p {
     text-align: center;
     font-size: 18px;
+    width: 35%;
 }
 
-.
+#projects {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #projects :first-child .work-photo img {
     flex: 1;
@@ -90,5 +97,7 @@ header nav ul li a {
     flex: 1;
     max-width: 15%;
     border-radius: 10px;
+    margin: 20px;
 }
+
 
